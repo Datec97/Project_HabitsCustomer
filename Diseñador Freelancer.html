@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://pry-1.netlify.app/#servicio -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+    <!--Recuerda:
+    1.- al colocar librerias deben ponerse primero para que se cargue primero en el navgador
+    2.- Dejar el stylesheet personalizado al final
+    -->
+    <!--
+    <link rel="preload" href="./Diseñador Freelancer_files/normalize.css" as="style">
+    <link rel="stylesheet" href="./Diseñador Freelancer_files/normalize.css">
+    -->
+    <!--Ayuda a mejorar el rendimiento de la carga de la pagina web-->
+    <link rel="preload" href="./Diseñador Freelancer_files/proyecto1.css" as="style">
+    <link rel="stylesheet" href="./Diseñador Freelancer_files/proyecto1.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./Diseñador Freelancer_files/css2" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header>
+        <!-- <figure>
+            <img src="./Diseñador Freelancer_files/Group 12logov2.jpg" alt="logo"><span
+                class="subtitle1">Freelancer</span>
+        </figure> -->
+        <!-- <h1 class="title1">Alexis Cisneros <span> Freelancer </span></h1> -->
+    </header>
+    <!--Navegador, aca los enlaces "a" se ordenan de izq a derec.
+        y normalmente son de tpo inline-->
+    <!--Una clase puede tener -->
+    <div class="content_main">
+        <nav class="contenedor_nav">
+            <a href="https://pry-1.netlify.app/#ini"
+                style="color: midnightblue; background-color: lightblue;">Presentacion</a>
+            <a href="https://pry-1.netlify.app/#nos" id="sepa">Mis servicios</a>
+            <a href="https://pry-1.netlify.app/#cli">Clientes</a>
+            <a href="https://pry-1.netlify.app/#cont">Contacteme!!</a>
+        </nav>
+    </div>
+    <!--Seccion1-->
+    <!--Imagen de la seccion 1-->
+    <!--<img src="imgns/hero.jpg" alt="heroe">-->
+    <section class="heroe" style="background-image: url(&quot;img/married_shop.jpg&quot;);">
+        <div class="container-heroe">
+            <h2>Analysis of customer behaviour and preferences.</h2>
+            <div class="ubicacion">
+                <!--Pegamos el icono vector-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="68"
+                    height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffbf00" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="11" r="3"></circle>
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                </svg>
+                <p>Carabayllo, Lima</p>
+            </div>
+            <a class="boton" href="https://pry-1.netlify.app/#">Contactar</a>
+        </div>
+    </section>
+    <!--Seccion2-->
+    <main class="sombra" id="nos">
+        <div class="scrollando">
+            <!--<h2>Mis servicios</h2>-->
+            <!--<div class="services">-->
+
+            <h2>
+                Desarrollo del proyecto
+            </h2>
+
+            <!-- salto de linea -->
+            <br>
+            <div class="responsive_contenido">
+                <pre class="fl_contenido">
+        1.	Extracción de datos
+
+           Para este procedimiento, tenemos 2 formas. La primera forma es mediante el uso
+           del lenguaje Python, haciendo uso de las librerías [pandas, Seaborn] en el 
+           entorno de Visual Studio Code, de la siguiente manera:
+
+           1.1.	Uso de Python bajo el entorno de Jupyter
+                   Usamos las credenciales del token para descarga de data.
+                   {"username":"######","key":"####################"}
+
+                   En un entorno de Google Colab para ejecución de código Python:
+                    
+                    <figure>
+                        <img src="img/cod_pyv2.png" >
+                    </figure>
+                
+            Con los codelines de [2] y [3] garantizamos que no haya un archivo igual 
+            ‘.kaggle’ en la carpeta raíz.
+
+                    <figure>
+                        <img src="img/cod_py2.png" >
+                    </figure>
+            Con el codeline[14], podemos validar todos los dataset creados por el autor 
+            ‘zeesolver’. Procedemos a descargar el dataset de primera opción 
+            <b>consumer-behavior-and-shopping-habits-dataset.csv.</b>
+
+                    <figure>
+                        <img src="img/cod_py3.png" >
+                    </figure>
+            Podemos apreciar su tamaño y tipo de licenicia. Con los siguientes codelines
+            procedemos a validar los primeros registros de la tabla “.head()”,
+            así como su estructura, tipo de datos, posibles valores nulos, limpieza y 
+            transformación inmediata de ser necesario, entre otras funcionalidades.
+                    <figure>
+                        <img src="img/cod_py4.png" class="peculiaridad">
+                    </figure>
+           1.2. Uso de Excel y power query
+
+                La segunda forma es más sencilla, pero presenta mayor limitación en cuanto
+                a funcionalidades, es decir, no nos va permitir hacer una limpieza y 
+                transformación ágil en caso de haber valores nulos y errores ortográficos.
+                Sin embargo, presenta la ventaja de ser más intuitivo y amigable.
+                    <figure>
+                        <img src="img/cod_py5.png" class="peculiaridad">
+                    </figure>
+                Se procede a extraer el archivo en formato csv, la herramienta reconoce el
+                signo delimitador entre campos y los divide por columnas. 
+                En este caso la transformación y limpieza se puede realizar de forma manual
+                dadas las herramientas dispuestas en la barra superior. 
+                    <figure >
+                        <img src="img/cod_py6v2.png" class="peculiaridad_2">
+                    </figure>
+
+                    <figure >
+                        <img src="img/cod_py7.png" class="peculiaridad" >
+                    </figure>
+                Posterior a estas correcciones, se carga nuevamente en el Excel para su 
+                modelamiento o normalización. Esto con la finalidad de que la data sea
+                coherente, integra, se evite redundancias o datos duplicados.
+
+                Power Query es una herramienta que nos va facilitar conexión con diversas
+                fuentes de datos, tales como la nube, sea sharepoint, blob storage, 
+                Data lakes. Por otro lado, orígenes de base de datos relacionales, tales 
+                como Oracle, SQL Server, MySQL. Archivos xml, json, csv, etc.
+                    
+                
+        2.	Etapa de modelamiento de datos
+
+                Para este proyecto, relacionado con las preferencias de producto y hábitos
+                de consumidores, es necesario modelar el dataset, ya que le añade mayor
+                capacidad de análisis, hace la tabla fact o tabla de hechos más ligera y 
+                por tanto más ágil y eficiente en las respuestas ante consultas.
+                
+                Cumpliendo con los criterios de normalización:
+                
+                1.	Primera forma normal (1FN): Atributos atómicos (Sin campos repetidos)
+                2.	Segunda forma normal (2FN): Cumple 1FN y cada registro de la tabla debe 
+                    depender de un campo con clave única [Primary key].
+                3.	Tercera forma normal (3FN): Cumple 1FN y 2FN y los campos que NO son clave,
+                    NO deben tener dependencias. Cuarta forma normal (4FN): Cumple 1FN, 2FN, 3FN
+                    y los campos multivaluados se identifican por una clave única.
+                
+                Se tiene como resultado un esquema de tipo estrella, se establecen las relaciones
+                con apoyo de la herramienta power pivot.
+                    
+                <figure>
+                    <!--cuando se añade el margin-left en la etiqueta, puede aportar a desplazarse mas a su izquierda-->
+                    <img src="img/img_cbp.png" class="peculiaridad_2" style="margin-left: 20rem;">
+                </figure>
+
+                </pre>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <section id="cont">
+            <h2>Contacto</h2>
+
+            <!---armado del formulario-->
+            <form action="https://pry-1.netlify.app/#pag" method="GET" class="formulario">
+                <fieldset>
+                    <legend> Contáctactame llenando los siguientes campos </legend>
+                    <div class="contenedor-campos">
+                        <div class="campos">
+                            <label>Nombre: </label>
+                            <input class="input-text" type="text" placeholder="Ingrese nombre">
+                        </div>
+                        <div class="campos">
+                            <label>Telefono: </label>
+                            <input class="input-text" type="tel" placeholder="Ingresa teléfono">
+                        </div>
+                        <div class="campos">
+                            <label>Correo: </label>
+                            <input class="input-text" type="email" placeholder="tu email">
+                        </div>
+                        <div class="campos">
+                            <label>Mensaje: </label><textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!--.contenedor-campos-->
+                    <br>
+                    <div class="flex alinear-derecha">
+                        <button class="boton w-sm-100" type="submit" value="Enviar" name="" id="boton">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados, © Alexis Cisneros</p>
+    </footer>
+
+    <!-- script aqui dado q si lo colocamos en el head puede que no 
+        reconozca el body-->
+    <script src="./Diseñador Freelancer_files/practiceDOm.js.download"></script>
+
+
+</body>
+
+</html>
