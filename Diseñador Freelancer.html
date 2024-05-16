@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://pry-1.netlify.app/#servicio -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseñador Freelancer</title>
+  <!--Recuerda:
+    1.- al colocar librerias deben ponerse primero para que se cargue primero en el navgador
+    2.- Dejar el stylesheet personalizado al final
+    -->
+  <!--
+    <link rel="preload" href="./Diseñador Freelancer_files/normalize.css" as="style">
+    <link rel="stylesheet" href="./Diseñador Freelancer_files/normalize.css">
+    -->
+  <!--Ayuda a mejorar el rendimiento de la carga de la pagina web-->
+  <link rel="preload" href="./Diseñador Freelancer_files/proyecto1.css" as="style" />
+  <link rel="stylesheet" href="./Diseñador Freelancer_files/proyecto1.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" />
+  <link href="./Diseñador Freelancer_files/css2" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- <figure>
+            <img src="./Diseñador Freelancer_files/Group 12logov2.jpg" alt="logo"><span
+                class="subtitle1">Freelancer</span>
+        </figure> -->
+    <!-- <h1 class="title1">Alexis Cisneros <span> Freelancer </span></h1> -->
+  </header>
+  <!--Navegador, aca los enlaces "a" se ordenan de izq a derec.
+        y normalmente son de tpo inline-->
+  <!--Una clase puede tener -->
+  <div class="content_main">
+    <nav class="contenedor_nav">
+      <a href=""></a>
+      <!-- https://datec97.github.io/Site_HabitsCustomer/Dise%C3%B1ador%20Freelancer.html/# -->
+      <!-- <a href="https://pry-1.netlify.app/#nos" id="sepa">Etapa 3</a> -->
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </nav>
+  </div>
+  <!--Seccion1-->
+  <!--Imagen de la seccion 1-->
+  <!--<img src="imgns/hero.jpg" alt="heroe">-->
+  <section class="heroe" style="background-image: url('img/married_shop.jpg')">
+    <div class="container-heroe">
+      <h2>Analysis of customer behaviour and preferences.</h2>
+      <div class="ubicacion">
+        <!--Pegamos el icono vector-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="68" height="68"
+          viewBox="0 0 24 24" stroke-width="2" stroke="#ffbf00" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="12" cy="11" r="3"></circle>
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+        </svg>
+        <p>Comas, Lima</p>
+      </div>
+      <div class="socialNetwork">
+        <a href="www.linkedin.com/in/oscar-alexis-cisneros-corzo"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Datec97" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://stackoverflow.com/users/23214679/alexis-008"><i class="bi bi-stack-overflow"></i></a>
+      </div>
+      </div>
+  </section>
+  <!--Seccion2-->
+  <main class="sombra" id="nos">
+    <div class="scrollando">
+      <!--<h2>Mis servicios</h2>-->
+      <!--<div class="services">-->
+
+      <h2>Desarrollo del proyecto</h2>
+
+      <!-- salto de linea -->
+      <br />
+      <div class="responsive_contenido">
+        <pre class="fl_contenido">
+        <b>1.	Extracción de datos</b> 
+
+           Para este procedimiento, tenemos 2 formas. La primera forma es mediante el uso
+           del lenguaje Python, haciendo uso de las librerías [pandas, Seaborn] en el 
+           entorno de Visual Studio Code, de la siguiente manera:
+
+           1.1.	Uso de Python bajo el entorno de Jupyter
+                   Usamos las credenciales del token para descarga de data.
+                   {"username":"######","key":"####################"}
+
+                   En un entorno de Google Colab para ejecución de código Python:
+                    
+                    <figure>
+                      <a href="img/cod_pyv2.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_pyv2.png" >
+                      </a>
+                    </figure>
+                
+            Con los codelines de [2] y [3] garantizamos que no haya un archivo igual 
+            ‘.kaggle’ en la carpeta raíz.
+
+                    <figure>
+                      <a href="img/cod_py2.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py2.png" >
+                      </a>
+                    </figure>
+            Con el codeline[14], podemos validar todos los dataset creados por el autor 
+            ‘zeesolver’. Procedemos a descargar el dataset de primera opción 
+            <b>consumer-behavior-and-shopping-habits-dataset.csv.</b>
+
+                    <figure>
+                      <a href="img/cod_py3.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py3.png" >
+                      </a>
+                    </figure>
+            Podemos apreciar su tamaño y tipo de licenicia. Con los siguientes codelines
+            procedemos a validar los primeros registros de la tabla “.head()”,
+            así como su estructura, tipo de datos, posibles valores nulos, limpieza y 
+            transformación inmediata de ser necesario, entre otras funcionalidades.
+                    <figure>
+                      <a href="img/cod_py4.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py4.png" class="peculiaridad">
+                      </a>
+                    </figure>
+           
+                </pre>
+      </div>
+    </div>
+
+  </main>
+  </br>
+  </br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+          1.2. Uso de Excel y power query
+
+                La segunda forma es más sencilla, pero presenta mayor limitación en cuanto
+                a funcionalidades, es decir, no nos va permitir hacer una limpieza y 
+                transformación ágil en caso de haber valores nulos y errores ortográficos.
+                Sin embargo, presenta la ventaja de ser más intuitivo y amigable.
+                    <figure>
+                      <a href="img/cod_py5.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py5.png" class="peculiaridad">
+                      </a>
+                    </figure>
+                Se procede a extraer el archivo en formato csv, la herramienta reconoce el
+                signo delimitador entre campos y los divide por columnas. 
+                En este caso la transformación y limpieza se puede realizar de forma manual
+                dadas las herramientas dispuestas en la barra superior. 
+                    <figure >
+                      <a href="img/cod_py6v2.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py6v2.png" class="peculiaridad_2">
+                      </a>
+                    </figure>
+
+                    <figure >
+                      <a href="img/cod_py7.png" target="_blank" class="Click_zoom">
+                        <img src="img/cod_py7.png" >
+                      </a>
+                    </figure>
+                Posterior a estas correcciones, se carga nuevamente en el Excel para su 
+                modelamiento o normalización. Esto con la finalidad de que la data sea
+                coherente, integra, se evite redundancias o datos duplicados.
+
+                Power Query es una herramienta que nos va facilitar conexión con diversas
+                fuentes de datos, tales como la nube, sea sharepoint, blob storage, 
+                Data lakes. Por otro lado, orígenes de base de datos relacionales, tales 
+                como Oracle, SQL Server, MySQL. Archivos xml, json, csv, etc.
+                    
+                
+        <b id="#ini">2.	Etapa de modelamiento de datos</b> 
+
+                Para este proyecto, relacionado con las preferencias de producto y hábitos
+                de consumidores, es necesario modelar el dataset, ya que le añade mayor
+                capacidad de análisis, hace la tabla fact o tabla de hechos más ligera y 
+                por tanto más ágil y eficiente en las respuestas ante consultas.
+                
+                Cumpliendo con los criterios de normalización:
+                
+                1.Primera forma normal (1FN): Atributos atómicos (Sin campos repetidos)
+                2.Segunda forma normal (2FN): Cumple 1FN y cada registro de la tabla debe 
+                    depender de un campo con clave única [Primary key].
+                3.Tercera forma normal (3FN): Cumple 1FN y 2FN y los campos que NO son clave,
+                    NO deben tener dependencias. 
+                4. Cuarta forma normal (4FN): Cumple 1FN, 2FN, 3FN
+                    y los campos multivaluados se identifican por una clave única.
+                
+                Se tiene como resultado un esquema de tipo estrella, se establecen las relaciones
+                con apoyo de la herramienta power pivot.
+
+
+                <figure>
+                    <!--cuando se añade el margin-left en la etiqueta, puede aportar a desplazarse mas a su izquierda-->
+                  <a href="img/img_cbp.png" target="_blank" class="Click_zoom">
+                    <img src="img/img_cbp.png" class="peculiaridad_2" >
+                  </a>
+                </figure>
+
+        </pre>
+    </div>
+  </main>
+  </br>
+  </br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+        Igualmente, podemos desarrollar este bosquejo modelamiento dentro de la plataforma
+        <b>dbdiagram.io</b>, el cual nos brindarà los recursos necesarios para la construcciòn
+        de las dimensiones, establecer los tipos de dato y las relaciones.
+
+        <figure>
+          <a href="img/mod_cbp.png" target="_blank" class="Click_zoom">
+            <img src="img/mod_cbp.png" class="peculiaridad_2" style="max-width: 90%;">
+          </a>
+        </figure>
+
+<b id="#nos">3.   Etapa de SQL Exploratory  </b> 
+
+        Nos apoyamos de la interacciòn entre el motor de BD con el IDE MSSMS, para conectarnos
+        de forma remota o importar las tablas creadas desde excel.
+
+        <figure>
+            <a href="img/sqlx_1.png" target="_blank" class="Click_zoom">
+                <img src="img/sqlx_1.png" class="peculiaridad_2" >
+            </a>
+        </figure>
+
+        Se indica al asistente, el origen desde donde se extrae la data, considerando la versión 
+        de Excel más reciente posible e indicando que la primera columna es con encabezados.
+
+        <figure>
+            <a href="img/sqlx_2.png" target="_blank" class="Click_zoom">
+                <img src="img/sqlx_2.png" class="peculiaridad_2" style="width: 100%">
+            </a>
+        </figure>
+
+        Acto siguiente, se realiza el mapeo de tablas origen a tablas de destino, considerando el
+        correcto tipo de dato por campo y tamaño de longitud de cadena.
+
+      <figure>
+          <a href="img/vin_campos.png" target="_blank" class="Click_zoom">
+              <img src="img/vin_campos.png" class="peculiaridad_2" style="width: 100%">
+          </a>
+      </figure>
+
+      </pre>
+  </main>
+  <br>
+  <br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+        Posterior a ello, ya se procede a instanciar la base de datos, para hacer las consultas 
+        relacionadas a los hábitos de compra y preferencias del consumidor.
+        A continuación, se muestra una lista de consultas SQL, cuyo código está documentado en 
+        mi cuenta GitHub : <a href="https://github.com/Datec97/Proyectos_DA">https://github.com/Datec97/Proyectos_DA</a> 
+
+        <h2><u>Lista de consultas y respuestas en SQL Server</u></h2>
+        <!-- CONSULTA 1 -->
+        <p style="margin-top: -2rem; margin-bottom: -2rem;">
+        <b>1. ¿Top 5 de los establecimientos en donde se realizó una mayor actividad de consumo
+              en el año 2023?</b></p>
+        <pre>
+          <li>En este caso, consideramos 2 campos clave (región y unidades vendidas), </li> 
+          <li>generamos una función de agregación sum() para determinar el total de unidades vendidas 
+            por región,</li> 
+          <li>Lo agrupamos por región y ordenamos por el total de unidades vendidas de forma descendente, 
+              posterior a ello usamos la sentencia Where y YEAR(), para filtrar el año solicitado.</li>
+          <li>Para finalizar, con la sentencia TOP(5) solo mostramos la cantidad de elementos región solicitada.</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q1.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q1.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+      <!-- CONSULTA 2 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          2. ¿Ranking de productos más vendidos por género, el 2024? </b></p>
+      <pre>
+          <li>Para este query, necesitamos hacer una suma de todas unidades vendidas en el 2024, agrupándolo por
+             genero y producto.  </li> 
+          <li>En primera instancia, se hace un left join de las tablas participantes</li> 
+          <li>Posteriormente, se necesitó implementar una sentencia condicional case-when con alias “genero”, que 
+            nos permite agrupar por varón y mujer.</li>
+          <li>Se procede a agrupar por producto y case-when (“genero”), ordenándolo por el total de productos vendidos
+             de forma descendente</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q2.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q2.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+      <!-- CONSULTA 3 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          3. ¿Ranking de preferencia de compra por rango etario? </b></p>
+      <pre>
+          <li>Para este caso, primero unimos con join las tablas pertinentes  </li> 
+          <li>Posterior a ello hacemos uso de la sentencia condicional case-when con alias (“rango etario”) 
+            para agrupar la sumatoria de las unidades de producto más comprado.</li> 
+          <li>Finalmente, agrupamos por articulo y (“rango etario”), ordenándolo de forma descendente por 
+            total de unidades vendidas</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q3.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q3.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+      </pre>
+    </div>
+  </main>
+  <br>
+  <br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+      <!-- CONSULTA 4 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+        4. ¿Preferencias de compra por producto y genero? </b></p>
+        <pre>
+          <li>Se necesita determinar el valor máximo de la sumatoria de unidades de los productos,
+            agrupándolo por genero. </li> 
+          <li>En este caso se unen las tablas pertinentes</li> 
+          <li>Se filtra por genero respectivo mediante un where y se hace uso de la sentencia IN()
+            para incluir solo el valor máximo de unidades vendidas.</li>
+          <li>Finalmente se agrupa por género, articulo y se ordena de forma descendente por el total
+             de unidades vendidas.</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q4.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q4.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+
+      <!-- CONSULTA 5 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          5. ¿Calificación de satisfacción del cliente por producto recibido en el 2023? </b></p>
+      <pre>
+          <li>Se procede al unir solo la tabla de hechos junto a la tabla de producto  </li> 
+          <li>Se hace una sumatoria del puntaje total por producto brindado por los clientes</li> 
+          <li>Se filtra con la sentencia where, el año indicado</li>
+          <li>Se agrupa finalmente por el articulo y se ordena por la sumatoria total de las 
+            calificaciones de forma descendente.</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q5.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q5.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+
+      <!-- CONSULTA 6 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          6. ¿Ranking de métodos de pago más utilizado por rango etario? </b></p>
+      <pre>
+          <li>Se procede a hacer uso de la función de agregación count() para contabilizar 
+            los métodos de pagos por rango etario  </li> 
+          <li>Nuevamente, usamos la sentencia condicional when-case para segmentar las edades
+             de los clientes en 2 grupos [18-44][45-70] años.</li> 
+          <li>Agrupamos por método de pago y (“rango etario”). Finalmente, ordenamos de forma
+             descendente por la cantidad total de métodos de pago.</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q6.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q6.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+      </pre>
+    </div>
+  </main>
+  <br>
+  <br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+      <!-- CONSULTA 7 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+        7. ¿Ranking de tipos de envío más solicitado por género? </b></p>
+        <pre>
+          <li>Se anexan las tablas de cliente y fact_table</li> 
+          <li>Se implementa la sentencia condicional case-when con alias “genero”,
+             que nos permite agrupar por varón y mujer</li> 
+          <li>Se usa la función de agregación count() para contabilizar la totalidad
+             de los diferentes tipos de envío</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q7.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q7.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+
+      <!-- CONSULTA 8 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          8. ¿Top de 15 clientes más fieles? </b></p>
+      <pre>
+          <li>Para este query, es vital previamente, determinar hasta que año se encuentran suscritos los usuarios,
+             a partir de allí en adelante se evalúa la fidelidad.</li> 
+          <li>Para esto se anexan la tabla de hechos y la tabla de clientes.</li> 
+          <li>Se determina la suscripción activa por cliente a través del estado de suscripción ‘yes’y se evalúa
+             desde la fecha última de suscripción hasta hoy con la expresión GETDATE().</li>
+          <li>Finalmente se agrupa por nombre de cliente y estado de suscripción</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q8.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q8.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+
+      <!-- CONSULTA 9 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+          9. ¿Ingresos por temporada en 2023? </b></p>
+      <pre>
+          <li>Se determina la sumatoria total de ingresos por el campo ‘season’ </li> 
+          <li>Se agrupa por temporada y se ordena de forma ascendente por Ingresos</li> 
+          
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_q9.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_q9.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+      </pre>
+    </div>
+  </main>
+  <br>
+  <br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+      <!-- CONSULTA 10 -->
+      <p style="margin-top: -2rem; margin-bottom: -2rem;"><b>
+        10. ¿Ranking de ingresos por producto en el último trimestre del 2023? </b></p>
+        <pre>
+          <li>	Se anexan las 3 tablas (producto, cliente y hechos)</li> 
+          <li>	Se utiliza la condicional case-when para establecer un rango
+             del periodo, del ‘01/10/2023’ al ‘31/12/2023’, bajo el alias ‘last_quarter_2023’</li> 
+          <li>	Se ejecuta la sumatoria por las compras realizadas</li>
+          <li>	Se agrupa por articulo y (“last_quarter_2023”)</li>
+          <li>	Se ordena por monto de forma descendente</li>
+        </pre>
+
+      <figure class="table">
+        <a href="img/tb_10.png" target="_blank" class="Click_zoom">
+          <img src="img/tb_10.png" class="peculiaridad_2" style="width: 100%">
+        </a>
+      </figure>
+
+      <b id="#cli">4. Etapa de procesamiento - ETL </b>
+
+      4.1 Recolección de datos
+
+      Para llevar a cabo este proceso de extracción de datos de fuentes o repositorios,
+      nos vamos a apoyar de la herramienta visual de Microsoft en la categoria de
+      servicios On-premise; este es SSIS o también llamado SQL Server Integration Services.
+
+      <figure>
+        <a href="img/dfw_1.png" target="_blank" class="Click_zoom">
+          <img src="img/dfw_1.png" class="peculiaridad_2">
+        </a>
+      </figure>
+
+      '-> Creamos un nuevo flujo de datos en el flujo de control, para mover la data
+      del punto A al punto B
+
+      <figure>
+        <a href="img/dfw_2.png" target="_blank" class="Click_zoom">
+          <img src="img/dfw_2.png" class="peculiaridad_2">
+        </a>
+      </figure>
+
+      '-> Elegimos “Asistente de origen” para seleccionar la fuente y gestionar las conexiones
+
+      <figure>
+        <a href="img/dfw_3.png" target="_blank" class="Click_zoom">
+          <img src="img/dfw_3.png" class="peculiaridad_2">
+        </a>
+      </figure>
+
+      Ingresamos nuestro server_name y elegimos la base de datos con la cual queremos trabajar.
+      (probamos conexión)
+      </pre>
+    </div>
+  </main>
+  <br>
+  <br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+              <figure>
+                        <a href="img/dfw_4.png" target="_blank" class="Click_zoom">
+                            <img src="img/dfw_4.png" class="peculiaridad_2">
+                        </a>
+              </figure>
+
+                        Primero configuramos la consulta o la tabla al conector para traer la data y conectarla 
+                        con el destino y acto siguiente validamos con “iniciar” si todo Ok!
+
+              <figure>
+                          <a href="img/dfw_5.png" target="_blank" class="Click_zoom">
+                              <img src="img/dfw_5.png" class="peculiaridad_2">
+                          </a>
+              </figure>
+
+                        Pasamos a configurar ahora el destino, es decir, la data del origen se insertará en una
+                        tabla del datawarehouse en la primera instancia del landing (recolección en landing)
+              
+               <figure>
+                          <a href="img/dfw_6.png" target="_blank" class="Click_zoom">
+                              <img src="img/dfw_6.png" class="peculiaridad_2">
+                          </a>
+              </figure>
+
+                        Una vez se hayan conectado las 2 cajas (origen de OLE DB y Destino de OLE BD), 
+                        hacemos un mapeo de asignación entre campos. La cual deben estar configurados 
+                        con las mismas restricciones, tipo de datos y longitud de cadena en caso de 
+                        tipo de dato varchar().
+
+                        <b>Nótese</b>
+                        Hay una caja del medio (Columna derivada), se configuró para establecer el campo
+                        faltante en la tabla origen, de manera que pueda hacer match en todos los campos 
+                        con la tabla destino.
+              
+              <figure>
+                          <a href="img/dfw_7.png" target="_blank" class="Click_zoom">
+                              <img src="img/dfw_7.png" class="peculiaridad_2 " style="margin-left: 20rem;">
+                          </a>
+              </figure>
+
+                        Al dar iniciar, podemos ver que se trasladan al destino del dwh los 50 registros de mi 
+                        tabla clientes.
+                        
+                        Sin embargo, recordemos que estamos volcando data al dwh, de tablas dimensionales que 
+                        aportan información contextual, por tanto no almacenará registros cada vez que se ejecute
+                        el procedimiento, no obstante si pueden actualizarse. Para esta finalidad, es importante
+                        contar con la herramienta Truncate de SQL Server.
+              
+              <figure>
+                          <a href="img/dfw_8.png" target="_blank" class="Click_zoom">
+                              <img src="img/dfw_8.png" class="peculiaridad_2 " style="margin-left: 20rem;">
+                          </a>
+              </figure>
+
+                        Se procede a configurar los parámetros señalados y se inserta la sentencia 
+                        “truncate table lnd.tb_customer" para evitar almacenar datos cada vez que se
+                        ejecute el procedimiento.
+                      </pre>
+    </div>
+  </main>
+  <br><br>
+  <main class="sombra">
+    <div class="responsive_contenido">
+      <pre>
+              <figure>
+                          <a href="img/dfw_9.png" target="_blank" class="Click_zoom">
+                          <img src="img/dfw_9.png" class="peculiaridad_2 " style="margin-left: 20rem;">
+                          </a>
+              </figure>
+
+                        Similar procedimiento para las tablas tb_product y tb_calendar, 
+                        cuyo origen en este caso es CSV.
+
+
+      
+
+
+
+              <figure>
+                          <a href="img/dfw_10.png" target="_blank" class="Click_zoom">
+                            <img src="img/dfw_10.png" class="peculiaridad_2 " style="margin-left: 20rem;">
+                          </a>
+              </figure>
+
+                        Se extrae también la carga de la tabla fact mediante el dataflow. En este caso, la extracción
+                        es mediante el uso de un script SQL, ya que al ser una tabla con una densidad alta de registros,
+                        puede ser ineficiente traer todos los registros de forma directa. Es por eso que se aplica un 
+                        extractor condicional de tiempo, como se ve en el siguiente ejemplo:
+
+              <figure>
+                          <a href="img/dfw_12.png" target="_blank" class="Click_zoom">
+                            <img src="img/dfw_12.png" class="peculiaridad_2 " style="margin-left: 20rem;">
+                          </a>
+              </figure>
+            4.2   limpieza , transformación y carga ( en SQL Sevrer )
+
+                        Posterior al proceso de extracción, se realiza unas transformaciones más elaboradas de la data 
+                        para su almacenamiento en datawarehouse y su carga definitiva en datamarts. Esto se llevó a cabo
+                        por cada dimensión y tabla de hechos, mediante la implementación de código SQL, el cual se 
+                        encuentra en el repositorio de GitHub: 
+            
+                        https://github.com/Datec97/Proyectos_DA/querys_etl_habits_project
+                        Para la salida de las tablas dimensionales, se cambió el tipo de dato de la llave principal a 
+                        nvarchar para agregarle caracteres, se agregó campo GETDATE() para determinar la fecha y hora 
+                        de carga, se cambia el idioma de los campos y finalmente se traslada al datamart para su puesta 
+                        en producción.
+                        
+              <figure>
+                          <a href="img/dfw_13.png" target="_blank" class="Click_zoom">
+                            <img src="img/dfw_13.png" class="peculiaridad_2 " style="margin-left: 10rem;">
+                          </a>
+              </figure>
+
+                        Las zonas que se comprenden en el ETL, tendrán una misión u objetivo distinto. Corroboremos la zona
+                        staging, datamart y su contenido.
+              <figure>
+                          <a href="img/dfw_15.png" target="_blank" class="Click_zoom">
+                            <img src="img/dfw_15.png" width="100%" class="peculiaridad_2" >
+                          </a>
+              </figure>
+            
+      </pre>
+
+    </div>
+  </main>
+  <br><br>
+  <main class="sombra" id="nos">
+    <div class="scrollando">
+      <!--<h2>Mis servicios</h2>-->
+      <!--<div class="services">-->
+
+      <!-- salto de linea -->
+      <br />
+      <div class="responsive_contenido">
+        <pre class="fl_contenido">
+
+      <pre>
+            <b id="#cont">5. Etapa de cubos</b> 
+
+                La implementación de cubo mediante la herramienta SSAS (Sql Server Analysis Services), nos va proporcionar 
+                2 ventajas respecto al tratamiento de la data:
+                        <pre style="margin-left: 10rem;">
+                          <li>Compresión de información</li>
+                          <li>Gestión del conocimiento</li>
+                        </pre>
+
+        <figure style="margin-top: -10rem;">
+          <a href="img/cb_1.png" target="_blank" class="Click_zoom">
+            <img src="img/cb_1.png" width="100%">
+          </a>
+        </figure>
+        <pre class="lay_cubos">
+                Siguiendo el flujo de solución de datos, el cubo nos va permitir obtener insights y oportunidades en el
+                proceso de negocio. Esto ya que vamos a poder añadirle a la data capacidad de análisis y comprensión, 
+                al hacer consultas por diferentes cortes o aristas.
+
+                Nótese:
+                Las herramientas BI en la actualidad, disponen en su propio motor, esta capacidad de comprimir la data, 
+                brinda una mayor agilidad y eficiencia en el flujo de trabajo con datos y es gracias a que ya no trabaja 
+                con tablas físicas que ocupan espacio en disco, sino se mantienen flotando en la memoria RAM con una magnitud 
+                de uso muy inferior.
+                
+                Para la implementación de cubos de información, nos vamos a apoyar de la herramienta VISUAL STUDIO como 
+                entorno para gestionar estos modelos de tablas tabular.
+              </pre>
+
+        <figure style="margin-top: -5rem;">
+          <a href="img/sas_1.png" target="_blank" class="Click_zoom">
+            <img src="img/sas_1.png" width="100%" class="peculiaridad_2">
+          </a>
+        </figure>
+        <div class="lay_cubos">
+          Para esto, vamos a generar un nuevo proyecto tabular de Analysis Services, configurando parámetros como nombre
+          de proyecto, ruta de almacén, actual instancia de .Net Framework, etc.
+        </div>
+        </pre>
+        <figure style="margin-top: -5rem;">
+          <a href="img/cb_2.png" target="_blank" class="Click_zoom">
+            <img src="img/cb_2.png" width="100%" class="peculiaridad_2" style="margin-left: 20rem;">
+          </a>
+        </figure>
+        <div class="lay_cubos">
+          Probamos conectividad con la BD, considerando el nivel de compatibilidad SQL Server 2019
+          / Azure Analysis Services (1500).
+          <figure style="margin-top: -5rem;">
+            <a href="img/cb_3.png" target="_blank" class="Click_zoom">
+              <img src="img/cb_3.png" width="100%" style="margin-top:10rem; margin-left: 15rem;">
+            </a>
+          </figure>
+          Procedemos con la conexión al origen y proceso de autenticación con el servidor, indicando la base de datos
+        </div>
+        </pre>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <main class="sombra" id="nos">
+    <div class="scrollando">
+      <pre>
+
+            <figure style="margin-top: -5rem;">
+              <a href="img/cb_4.png" target="_blank" class="Click_zoom">
+                <img src="img/cb_4.png" width="100%" style="margin-top:10rem; margin-left: 15rem;">
+              </a>
+            </figure>
+
+                Nos conectamos y extraemos únicamente las tablas en producción o puestas en el datamart del proceso ETL.
+                Pues es justamente de aquì donde vamos a contar con la data limpia y preparada para su anàlisis.
+            
+            <figure style="margin-top: -5rem;">
+              <a href="img/cb_5.png" target="_blank" class="Click_zoom">
+                  <img src="img/cb_5.png" width="100%" style="margin-top:10rem; margin-left: 15rem;">
+              </a>
+            </figure>
+            
+                Procedemos a establecer las relaciones entre tablas, para que puedan comunicarse entre si. 
+                Siempre es importante considerar 3 puntos, los origenes de datos, relaciones y las tablas.
+                Tal como lo muestra la siguiente información
+
+                <figure style="margin-top: -5rem;">
+                  <a href="img/cb_6.png" target="_blank" class="Click_zoom">
+                      <img src="img/cb_6.png"  style="margin-bottom: -10rem; margin-top: 2rem; margin-left: 20rem">    
+                  </a>
+                </figure>
+
+              <p> 
+              <pre>  
+                Una vez, tengamos los 3 elementos Ok!, vamos al apartado de ventana derecha, “explorador de soluciones”
+                y click derecho <b style="color: blueviolet; font-size: 2.5rem;">compilar e implementar</b>. Esto nos va a permitir hacer una depuraciòn
+                de la data y actualizar las tablas, en caso de añadirse o eliminarse datos.
+              </pre>
+      </p>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_7.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_7.png" style="margin-top:2rem;">
+        </a>
+      </figure>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_8.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_8.png" style="margin-top:2rem;">
+        </a>
+      </figure>
+      <pre>
+                  Desplegamos el servicio de SSAS en SQL Server management studio 2019. Dentro del modelo tabular
+                  podemos visualizar las tablas desplegadas para ser utilizada por cualquier software en la 
+                  misma red.
+                </pre>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_9.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_9.png" style="margin-bottom: -5rem; margin-top: 2rem; width: 750px;">
+        </a>
+      </figure>
+      <p>
+        Con esto ya tendremos el cubo implementado y desplegado en el servicio de SSAS.
+        Acto siguiente, es posible conectar este servicio de modelo tabular con excel,
+        con POWER BI y con otras herramientas de visualización.
+      </p>
+      <p>
+        Vamos por la conexión en MS Excel <img src="img/excel_logo.png" alt="" style="width: 30px; height: 30px;">:
+        Nos dirigimos a pestaña “datos” de la barra de herramientas, luego obtener datos
+        desde una base de datos, elegimos Analysis Services
+      </p>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_10.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_10.png" style="margin-bottom: -5rem; margin-top: 2rem; width: 750px;">
+        </a>
+      </figure>
+      </pre>
+    </div>
+  </main>
+  <br><br>
+  <main class="sombra" id="nos">
+    <div class="scrollando">
+      <pre>
+                <pre> 
+                  Nos conectamos al cubo de información centralizado para proceder con el análisis
+                  y entedimiento de datos.
+                </pre>
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_11.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_11.png" style="margin-bottom: -5rem; margin-top: 2rem; margin-left: 15rem;">
+        </a>
+      </figure>
+
+      <pre>
+                  Procedemos ahora con la conexión del modelo tabular con power BI.  <img src="img/logoPBI.jpg" alt="" style="width: 60px; height: 30px; margin-left: -5rem;">:
+                  En el entorno, nos dirigimos a “obtener datos”, bases de datos y 
+                  Bases de datos SQL Server Analysis Services. 
+
+                </pre>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_12.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_12.png" style="margin-bottom: -5rem; margin-top: 2rem; margin-left: 15rem;">
+        </a>
+      </figure>
+
+      <pre>
+                  Agregamos las credenciales, nos conectamos en directo 
+                </pre>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_13.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_13.png" style="margin-bottom: -5rem; margin-top: 2rem; margin-left: 15rem;">
+        </a>
+      </figure>
+
+      <pre>
+                  Una vez importados los datos, procedemos a hacer el análisis respectivo.
+                  
+                  <b>Nótese:</b>
+                  Tanto SQL Server Analysis Services como Power Pivot de Excel, brindan la capacidad 
+                  de aligerar los tamaños o densidades de las cantidades de datos que se manejan una vez se 
+                  construyen los cubos.Sin embargo, en la siguientes imágenes podemos apreciar la diferencia
+                  abismal del factor de compresión que ofrece cada herramienta
+
+                </pre>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/cb_14.png" target="_blank" class="Click_zoom">
+          <img src="img/cb_14.png" style="margin-bottom: -5rem; margin-top: 2rem; margin-left: 15rem; width: 520px;">
+        </a>
+      </figure>
+
+      <pre>
+
+                    <b>06. Etapa de la visualización</b>
+
+                    Para efectos del desarrollo del dashboard y análisis de estos datos, se hará uso de la 
+                    herramienta Power BI, pues las tecnologías de procesamiento y carga por el que ha pasado 
+                    el flujo de datos del dataset han sido del propietario Microsoft. Esto nos garantiza 
+                    una mayor compatibilidad de conexión y por tanto éxito en el desarrollo de la solución. 
+                 
+                </pre>
+
+      <figure style="margin-top: -5rem;">
+        <a href="img/pbi_1.png" target="_blank" class="Click_zoom">
+          <img src="img/pbi_1.png" style="margin-bottom: -5rem; margin-left: 15rem; width: 520px;">
+        </a>
+      </figure>
+
+
+      </pre>
+    </div>
+    </div>
+
+  </main>
+
+
+
+
+
+  <footer>
+    <p>Todos los derechos reservados, © Alexis Cisneros</p>
+  </footer>
+
+  <!-- script aqui dado q si lo colocamos en el head puede que no 
+        reconozca el body-->
+  <script src="./Diseñador Freelancer_files/practiceDOm.js.download"></script>
+</body>
+
+</html>
