@@ -21,51 +21,46 @@ html{
     /* scroll-snap-type: y proximity; */
 }
 
-/* Hacemos scroll para el proyecto*/
-/* .scrollando, .content_main, .formulario{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-} */
-
 *, *:before, *:after{
     box-sizing: inherit;
 }
 
+
 body{
-    font-size: 16px;
+    /* font-size: 16px; */
     /* font-family: 'Courgette', cursive; */
     font-family: 'Work Sans', sans-serif;
     font-weight: normal;
     background-image: linear-gradient(to top, var(--grisaseoClaro) 0% , var(--blanco) 100%);
+    
 }
+
+
 
 /* Estilos al logo */
 figure,.Click_zoom{
     /* tamaño original: 867x252 */
-    max-width: 100%;
+    /* max-width: 100%;
     max-height: 75rem;  
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-end; */
 }
 .Click_zoom{
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
 }
-figure img{ 
-    max-width: 75.18rem;
+img{ 
+    /* max-width: 75.18rem;
     max-height: 25.75rem;
-    padding: 1rem;
+    padding: 1rem; */
+    max-width: 50rem;
 }
 
 @media (max-width: 768px){
-    figure{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    figure img{ 
+   
+    img{
         max-width: 100%;
     }
 }
@@ -73,31 +68,6 @@ figure img{
 .subtitle1{
     font-size: 4.5rem;
     color: blueviolet;
-}
-
-.boton{
-    background-color: var(--azulejo);
-    color: var(--blanco);
-    text-decoration: none;
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    border-radius: .5rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: serif;
-    font-weight: bold;
-    border:none
-}
-
-.boton:hover{
-    cursor: pointer;
-}
-
-@media (max-width: 768px){
-    .boton{
-        width: 90%;
-        text-align: center;
-    }
 }
 
 .sombra{
@@ -111,15 +81,17 @@ figure img{
     padding: 2rem;
     border-radius: .5rem;
     margin: 0 auto;
-    max-width: 120rem;
+    max-width: 80rem;
 }
 /* Headings */
 h1{
-    font-size: 3,8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 h2{
-    font-size: 2,8rem;
+    font-size: 1rem;
+    text-align: left;
+
 }
 h3{
     font-size: 1,8rem;
@@ -128,7 +100,22 @@ h1,h2,h3{
     text-align: center;
 }
 
+/* Modeling le pertenece a Etapa de modelamiento */
+p, .modeling, li{
+    max-width: 70%;
+}
 
+/*Agregando media querys para RESPONSIVE DESIGNS*/
+/*La estructura comprende un "@media(condicion){}"
+que permite ejecutar el codigo con una determinada resolucion*/
+@media(max-width: 768px){
+    /*LA condicion nos dice q a partir de un ancho
+    de pantalla minimo de 480px, mostrar:*/
+    p{
+        max-width: 100%;
+        color: black;
+    }
+}
 
 
 /* utilidades */
@@ -147,11 +134,6 @@ h1,h2,h3{
     justify-content: flex-end;
 }
 
-/* Navegacion */
-.content_main{
-    max-width: 100%;
-    margin: 0 auto;
-}
 .contenedor_nav {
     background-color: var(--azulejo);
    /* max-width: 120rem;  equivale -> 1200px*/
@@ -172,79 +154,14 @@ h1,h2,h3{
     /*luego, lo centro o lo muevo al lado que desee*/
     /*align-items: center;*/
     max-width: 100%;
-    height: 2.5rem;
+    height: 1rem;
 
 }
 
-@media (min-width: 768px){
-    .contenedor_nav{
-        /*Este media hereda los atributos del
-        .contenedor_nav(y solo queremos que a partir
-        de un determinado ancho de pantalla se muestre en row[fila])*/
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-}
-.contenedor_nav a{
-
-    text-align: center;
-    /* font-family: 'Times New Roman'; */
-    font-size: 2rem;
-    font-weight: bolder;
-    color: var(--blanco);
-    text-decoration: none;
-    padding: 1rem;
-}
-/* Le coloca un fondo cuando se coloca el mouse sobre este*/
-.contenedor_nav a:hover{
-    background-color: var(--amarillezco);
-    color: var(--oscuro);
-}
-.contenedor_nav #sepa{
-    word-spacing: 0.1cm;
-}
-
-/*Selector por atributo
-form fieldset input{
-    border-radius: 2rem;
-}*/
-/*Selector por attributo*/
-/* button{
-    background-color: cornflowerblue;
-    color: white;
-    font-weight: bolder;
-    font-size: 2rem;
-    width: 10rem;
-    height: 4rem;
-    /*
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-end-end-radius: 2rem;
-    border-end-start-radius: 2rem;
-    es reemplazado por:
-    
-    border-radius: 2rem;
-} */
-
-/*Agregando media querys para RESPONSIVE DESIGNS*/
-/*La estructura comprende un "@media(condicion){}"
-que permite ejecutar el codigo con una determinada resolucion*/
-@media(max-width: 768px){
-    /*LA condicion nos dice q a partir de un ancho
-    de pantalla minimo de 480px, mostrar:*/
-    body{
-        background-color: lightyellow;
-    }
-}
-@media (max-width: 360px){
-    p{
-        color: darkblue;
-    }
-}
 /* contenido HEROE */
 /*Agregamos imagenes con CSS3*/
 .heroe{
-    background-image: url(/imgns/hero.jpg);
+    background-image: url(/img/married_shop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 410px;
@@ -310,204 +227,6 @@ que permite ejecutar el codigo con una determinada resolucion*/
     align-items: flex-end;
 }
 
-
-
-
-/* Services */
-/* segunda seccion de la pagina */
-
-
-/* el mq nos dice min con 768px lo vuelves columnas, y en lo anterior
-que esté como el predeterminado(row)*/
-@media (min-width: 768px){
-    .services{
-        /* EN CSS podemos definir contenido de izq. a der. o de
-        arriba hacia abajo. */
-        display: grid;
-        /* grid-template-columns: 33.3% 33.3% 33.3%; */
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        grid-template-columns: repeat(3, 1fr);
-        /* Añadimos separacion entre elementos */
-        column-gap: 1rem;
-    }
-}
-@media (max-width: 768px){
-    .servicio p{
-        /* texto con line-height: ; para
-        separacion entre lineas*/
-        /*tamaño*/
-        width: 90%;
-        position: fixed;
-        /* top: -100%;
-        left: 10px;  */ 
-        /* transition: all 0.25s ease-in;  */
-        line-height: 3rem;
-        text-align: center;
-        box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
-        padding: 1rem 0;  
-        font-size: 2rem;
-    }
-    .servicio .icono{
-        transition: all .3s;
-    }
-    .servicio .icono{
-        /* add animation */
-    animation-name: alternaColor;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    }
-
-    .servicio p.activs {
-        /* visibility: visible; */
-         transition:  all 3s ease-in;  
-         position: relative;
-         /* top:10px;  */
-         
-    }
-}
-
-.servicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-/* diseño de los logos*/
-.servicio h3{
-    /* color e intensidad de font */
-    font-weight: bold;
-    color: var(--azulejo);
-}
-
- .servicio p{ 
-    /* texto con line-height: ; para
-    separacion entre lineas*/
-    /* position: fixed;
-    bottom: 150px;
-    transition: all 0.25s ease-in; */
-    line-height: 3rem; 
-    text-align: center;
-    /* box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
-    padding: 3rem 0; */ 
- } 
-
-
-.icono{
-    height: 15rem;  /*1rem == 16rem*/
-    width: 15rem;
-    background-color: var(--amarillezco);
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-@keyframes alternaColor {
-    0%{
-        background-color: var(--amarillezco);
-    }
-    50%{
-        background-color: orange;
-    }  
-    51%{
-        background-color: orange;
-    }  
-    100%{
-        background-color: var(--amarillezco);
-    }
-}
-
-
-
-/* Maquetemos el formulario */
-
-.formulario{
-    background-color: gray;
-    /* la funcion min nos dice,
-    usa el tamaño 60rem o 100% dependiendo el
-    ancho del dispositivo, la funcion permite
-    que se tome siempre el minimo o el 100% en caso
-    el tamaño del la pantalla
-    sea menor que el 100%*/
-    width: min(60rem, 100%);
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-
-.formulario fieldset{
-    border: none;
-}
-
-.formulario legend{
-    /* alineacion */
-    text-align: center;
-    /* transf a upperc */
-    text-transform: uppercase;
-    /* font size weight */
-    font-size: 1.8rem;
-    font-weight: bolder;
-    /* color */
-    color: var(--amarillezco);
-    margin-bottom: 2rem;
-}
-/* resulta que text-align en el "legend" solo es efectivo para el chrome*/
-/* Entonces necesitamos colocar margin-left o right para centrar dicho "legend"*/
-@media (min-width: 768px){
-    .contenedor-campos{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        /* grid-template-rows: auto; */
-        column-gap: 1rem;
-    }
-    .campos:nth-child(3), .campos:nth-child(4){
-        /* Abarcamos de liena 1 a la 3 */
-        grid-column: 1/3;
-    }
-}
-
-.campos{
-    margin-bottom: 1rem;
-}
-
-.campos label{
-    color: var(--blanco);
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
-
-
-.campos textarea{
-    height: 1rem;
-}
-
-/* Aplicamos un slector CSS x atributo */
-/* .campos input[type="text"], 
-.campos input[type="tel"]{
-    background-color: aquamarine;
-    border-radius: 1rem;
-} */
-
-.input-text{
-    background-color: azure;
-    width: 100%;
-    border:none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.campos textarea{
-    height: 20rem;
-    width: 100%;
-}
-
-/* .enviar .boton{
-    width: 100%;
-} */
-
 footer{
     text-align: center;
 }
@@ -525,37 +244,30 @@ footer{
 .responsive_contenido{
 
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 
-
-    width: min(60rem, 100%);
+   /*  width: min(60rem, 100%);
     font-size: min(1.8rem, 100%);
     margin: 0 auto;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 1rem; */
 }
 
-.peculiaridad{
+/* .peculiaridad{
     margin-left: 130px;
-}
+} */
 
-.peculiaridad_2{
+/* .peculiaridad_2{
     max-width: 350rem;
     max-height: 40rem;
     margin-left: 10rem;
-}
+} */
 
 /* CSS PARA CONSULTAS - QUERY */
 /* Estilos para elementos <li> dentro de un <pre> */
 pre li{
     margin-left: 10rem;
-}
-
-figure.table{
-
-    margin-top: -6rem;
 }
 
 .texto_justificado{
@@ -564,14 +276,14 @@ figure.table{
 
 
 /* colocar en contenedor */
-.lay_cubos{
+/* .lay_cubos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-    text-align: start;
+    text-align: start; */
     /* padding: 0rem 5rem 0rem 5rem; */
-}
+/* } */
 
 .cont-cuadros{
     display: flex;
